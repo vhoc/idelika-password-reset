@@ -1,3 +1,23 @@
+.btn-primary {
+  --bs-btn-bg: #E77A60 !important;
+  --bs-btn-border-color: #D76951 !important;
+  --bs-btn-hover-bg: #C65942 !important;
+  --bs-btn-hover-border-color: #B54833 !important;
+  --bs-btn-active-bg: #C65942 !important;
+  --bs-btn-active-border-color: #B54833 !important;
+  --bs-btn-disabled-bg: #F9D4CD !important;
+  --bs-btn-disabled-border-color: #F9C2B6 !important;
+}
+
 .App {
+  display: flex;
+  justify-content: center;
+  width: 100%;
   text-align: center;
+  display: flex;
+}
+
+.form {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }

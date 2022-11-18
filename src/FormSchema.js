@@ -5,7 +5,7 @@ const FormSchema = Yup.object().shape({
     password: Yup.string()
       .min(8, 'La contraseña debe tener mínimo 8 caracteres.')
       .max(100, "La contraeña no puede exceder 100 caracteres.")
-      .test('isValidPass', ' no es válida', (value, context) => {
+      .test('isValidPass', ' debe tener al menos 1 mayúscula, 1 símbolo y 1 número.', (value, context) => {
         const hasUpperCase = /[A-Z]/.test(value)
           const hasLowerCase = /[a-z]/.test(value)
           const hasNumber = /[0-9]/.test(value)
@@ -27,7 +27,7 @@ const FormSchema = Yup.object().shape({
       passwordConfirmation: Yup.string()
         .min(8, 'La contraseña debe tener mínimo 8 caracteres.')
         .max(100, "La contraeña no puede exceder 100 caracteres.")
-        .test('isValidPass', ' no es válida', (value, context) => {
+        .test('isValidPass', ' debe tener al menos 1 mayúscula, 1 símbolo y 1 número.', (value, context) => {
           const hasUpperCase = /[A-Z]/.test(value)
             const hasLowerCase = /[a-z]/.test(value)
             const hasNumber = /[0-9]/.test(value)
